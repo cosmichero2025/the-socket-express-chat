@@ -1,5 +1,5 @@
 // Made connection
-const socket = io.connect('http://localhost:5000');
+const socket = io.connect('https://cryptic-dawn-44332.herokuapp.com/');
 
 let message = document.querySelector('#message');
 handle = document.querySelector('#handle');
