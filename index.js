@@ -5,10 +5,12 @@ const socket  = require('socket.io');
 const app = express();
 app.set('port', (process.env.PORT || 5000))
 
+// Static files
+app.use(express.static(__dirname + '/public'));
+
 const server = app.listen(app.get('port'), () => console.log(`Hey the server's running on port: ${PORT}`));
 
-// Static files
-app.use(express.static('public'));
+
 
 // Socket setup
 const io = socket(server);
