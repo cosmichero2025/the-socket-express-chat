@@ -3,13 +3,12 @@ const socket  = require('socket.io');
 
 // App setup
 const app = express();
+const PORT = process.env.PORT || 8888;
+
+const server = app.listen(PORT, () => console.log(`Hey the server's running on port: ${PORT}`));
 
 // Static files
-app.use(express.static(__dirname + '/public'));
-
-const server = app.listen(process.env.PORT || 5000, () => console.log(`Hey the server's running on port: ${PORT}`));
-
-
+app.use(express.static('public'));
 
 // Socket setup
 const io = socket(server);
