@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset='utf-8' />
+
+  <title>Socket Express!</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css'>
+  <link rel='stylesheet' href='./styles.css' />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js'></script>
+  <script src='./moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js'></script>
+</head>
+
+<body>
+  <h1>The Socket Express</h1>
+  <div class='socket-express'>
+    <div id='chat-window'>
+      <div id='output'></div>
+      <div id='feedback'></div>
+    </div>
+    <div class='row'>
+      <div class='input-field col s12'>
+        <input value='Anon' id='handle' type='text'>
+        <label class='active' for='handle'>Username</label>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='input-field col s10'>
+        <textarea id='message' class='materialize-textarea'></textarea>
+        <label for='message'>Message</label>
+      </div>
+      <div class='col s2'>
+        <a href='javascript:;' id='send' class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+
+
+  </div>
+  <script src='./chat.js'></script>
+</body>
+
+</html>

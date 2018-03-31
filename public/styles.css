@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #FC4D6B;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.socket-express {
+  max-width: 40%;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label, .materialize-textarea:focus:not([readonly])+label {
+  color: #FC4D6B !important;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #FC4D6B !important;
+  box-shadow: 0 1px 0 0 #FC4D6B !important;
+}
+
+#chat-window {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-direction: column-reverse;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  height: 400px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FC4D6B
+}
+
+#output div span {
+  font-size: 14px;
+}
+
+#output div {
+  padding: 4px 0px;
+  margin: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+  color: #555;
+}
+
+
+#output div strong{
+  font-size: 18px;
+  color: #FC4D6B;
+  padding-right: 10px;
+}
+
+#send {
+  margin-left: 15px;
+}
