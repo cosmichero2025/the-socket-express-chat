@@ -17,11 +17,6 @@ These instructions will get you a copy of the project up and running on your loc
 You need to have a running version of Node.js and NPM/Yarn
 
 ```
-Give examples
-```
-
-### Installing
-
 git clone https://github.com/cosmichero2025/the-socket-express-chat.git
 
 cd the-socket-express-chat
@@ -29,6 +24,7 @@ cd the-socket-express-chat
 npm/yarn install
 
 yarn start
+```
 
 ## Built With
 
@@ -36,9 +32,9 @@ yarn start
 * [Express.js](https://expressjs.com/) - Server framework
 * [Socket.io](https://socket.io/) - Used to make realtime chat
 
-## Authors
+## Author
 
-* **Brandon Kaufhold** - *Initial work* - [cosmichero2025](https://github.com/cosmichero2025)
+* **Brandon Kaufhold**  - [cosmichero2025](https://github.com/cosmichero2025)
 
 
 ## License
